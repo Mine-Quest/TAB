@@ -1,0 +1,12 @@
+{
+    "id": "tab",
+    "name": "TAB Reborn",
+    "version": "@version@",
+    "url": "https://github.com/NEZNAMY/TAB",
+    "description": "@description@",
+    "authors": [
+        "Golfing8",
+        "NEZNAMY"
+    ],
+    "main": "me.neznamy.tab.platforms.velocity.Main"
+}
