@@ -12,7 +12,6 @@ import me.neznamy.tab.api.protocol.PacketPlayOutChat.ChatMessageType;
 import me.neznamy.tab.api.util.Preconditions;
 import me.neznamy.tab.shared.event.impl.PlayerLoadEventImpl;
 import me.neznamy.tab.shared.features.sorting.Sorting;
-import org.geysermc.floodgate.api.FloodgateApi;
 
 /**
  * Abstract class storing common variables and functions for player,
@@ -100,7 +99,7 @@ public abstract class ITabPlayer implements TabPlayer {
         this.server = server;
         this.world = world;
         this.version = ProtocolVersion.fromNetworkId(protocolVersion);
-        this.bedrockPlayer = TAB.getInstance().isFloodgateInstalled() && FloodgateApi.getInstance() != null && FloodgateApi.getInstance().isFloodgatePlayer(uniqueId);
+        this.bedrockPlayer = false; // TAB.getInstance().isFloodgateInstalled() && FloodgateApi.getInstance() != null && FloodgateApi.getInstance().isFloodgatePlayer(uniqueId);
         this.permissionGroup = TAB.getInstance().getGroupManager().detectPermissionGroup(this);
         UUID offlineId = UUID.nameUUIDFromBytes(("OfflinePlayer:" + name).getBytes(StandardCharsets.UTF_8));
         this.tabListId = useRealId ? getUniqueId() : offlineId;

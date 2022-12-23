@@ -129,22 +129,7 @@ public class NameTag extends TabFeature implements TeamManager {
 
     @Override
     public void onServerChange(TabPlayer p, String from, String to) {
-        boolean disabledBefore = isDisabledPlayer(p);
-        boolean disabledNow = false;
-        if (isDisabled(p.getServer(), p.getWorld())) {
-            disabledNow = true;
-            addDisabledPlayer(p);
-        } else {
-            removeDisabledPlayer(p);
-        }
-        if (disabledNow && !disabledBefore) {
-            unregisterTeam(p, sorting.getShortTeamName(p));
-        } else if (!disabledNow && disabledBefore) {
-            registerTeam(p);
-        } else {
-            //It's necessary to update the team always as changing servers will not re-register the team for the packet being sent
-            updateTeam(p);
-        }
+        onWorldChange(p, null, null);
     }
 
     @Override
