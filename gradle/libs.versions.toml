@@ -22,7 +22,7 @@ event = "3.0.0"
 bukkit = "1.16.5-R0.1-SNAPSHOT"
 bungeecord = "1.19-R0.1-SNAPSHOT"
 krypton = "0.59.2"
-velocity = "3.1.2-SNAPSHOT"
+velocity = "3.1.3-SNAPSHOT"
 
 # Platform extras
 placeholderapi = "2.11.2"
@@ -64,7 +64,7 @@ bungeecord = { group = "net.md-5", name = "bungeecord-proxy", version.ref = "bun
 krypton-api = { group = "org.kryptonmc", name = "krypton-api", version.ref = "krypton" }
 krypton-server = { group = "org.kryptonmc", name = "krypton-server", version.ref = "krypton" }
 krypton-annotationProcessor = { group = "org.kryptonmc", name = "krypton-annotation-processor", version.ref = "krypton" }
-velocity = { group = "com.velocitypowered", name = "velocity-api", version.ref = "velocity" }
+velocity = { group = "com.velocitypowered", name = "velocity", version.ref = "velocity" }
 
 # Platform extras
 placeholderapi = { group = "me.clip", name = "placeholderapi", version.ref = "placeholderapi" }

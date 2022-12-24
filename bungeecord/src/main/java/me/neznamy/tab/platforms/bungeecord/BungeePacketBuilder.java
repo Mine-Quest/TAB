@@ -12,9 +12,9 @@ import me.neznamy.tab.api.protocol.PacketPlayOutPlayerInfo.EnumPlayerInfoAction;
 import me.neznamy.tab.api.protocol.PacketPlayOutPlayerInfo.PlayerInfoData;
 import net.md_5.bungee.protocol.PlayerPublicKey;
 import net.md_5.bungee.protocol.Property;
-import net.md_5.bungee.protocol.packet.*;
-import net.md_5.bungee.protocol.packet.PlayerListItem.Item;
-import net.md_5.bungee.protocol.packet.ScoreboardObjective.HealthDisplay;
+import me.neznamy.tab.platforms.velocity.spoofed.*;
+import me.neznamy.tab.platforms.velocity.spoofed.PlayerListItem.Item;
+import me.neznamy.tab.platforms.velocity.spoofed.ScoreboardObjective.HealthDisplay;
 
 /**
  * Packet builder for BungeeCord platform

@@ -16,7 +16,7 @@ public class VelocityPlatform extends ProxyPlatform {
      * Constructs new instance with default packet builder
      */
     public VelocityPlatform() {
-        super(new PacketBuilder());
+        super(new VelocityPacketBuilder());
     }
 
     @Override

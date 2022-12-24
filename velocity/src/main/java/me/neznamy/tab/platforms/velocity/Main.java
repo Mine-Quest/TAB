@@ -9,6 +9,7 @@ import com.velocitypowered.api.event.proxy.ProxyShutdownEvent;
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.proxy.messages.MinecraftChannelIdentifier;
+import lombok.Getter;
 import me.neznamy.tab.api.ProtocolVersion;
 import me.neznamy.tab.api.TabAPI;
 import me.neznamy.tab.api.TabConstants;
@@ -51,6 +52,7 @@ public class Main {
 
     /** Console logger with TAB's prefix */
     @Inject
+    @Getter
     private Logger logger;
 
     /** TAB's plugin message channel */

@@ -14,9 +14,9 @@ import me.neznamy.tab.shared.features.redis.RedisPlayer;
 import me.neznamy.tab.shared.features.sorting.Sorting;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.protocol.DefinedPacket;
-import net.md_5.bungee.protocol.packet.ScoreboardDisplay;
-import net.md_5.bungee.protocol.packet.ScoreboardObjective;
-import net.md_5.bungee.protocol.packet.Team;
+import me.neznamy.tab.platforms.velocity.spoofed.ScoreboardDisplay;
+import me.neznamy.tab.platforms.velocity.spoofed.ScoreboardObjective;
+import me.neznamy.tab.platforms.velocity.spoofed.Team;
 
 import java.util.Collection;
 import java.util.function.Function;
